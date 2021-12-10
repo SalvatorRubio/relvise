@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  background: #333;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.intro {
+  position: relative;
+  background: url("img/intro/intro.jpg") center no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 15px;
+  }
+
+  div {
+    font-size: 20px;
+  }
+}
+
+.webp .intro { background: url(img/intro/intro.webp) center no-repeat; }
