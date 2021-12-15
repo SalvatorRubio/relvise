@@ -1,0 +1,27 @@
+.clients {
+    min-height: 270px;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 270px;
+    }
+
+    &__inner div {
+        min-width: 153px;
+        margin: 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__inner div:first-child {
+        margin-left: 0;
+    }
+    &__inner div:last-child {
+        margin-right: 0;
+    }
+}
+

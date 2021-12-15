@@ -1,23 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
-    background: #333;
-    font-size: 15px;
-    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    background: #FAFAFA;
 }
 
-h1, h2 ,h3, h4, h5, h6 {
+h1, h2 ,h3, h4, h5, h6, p {
     margin: 0;
-    @media (max-width: 767px) {
-        font-size: 15px;
-    }
+    display: inline-block;
 }
-div {
-    @media (max-width: 767px) {
-        font-size: 20px;
-    }
-}
+
 
 *,
 *::after,
@@ -25,18 +17,38 @@ div {
     box-sizing: border-box;
 }
 
-
-
-
-//INTRO ///////////////////////////////////////////////////////////////////////
-
-.intro {
-    position: relative;
-    background: url('img/intro/intro.jpg') center no-repeat;
-    height: 100vh;
+.container {
+    max-width: 1050px;
     width: 100%;
-
-	
-
+    margin: 0 auto;
+    padding: 0 5px;
 }
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    text-align: center;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+@import '_header.scss';
+@import '_intro.scss';
+@import '_services.scss';
+@import '_statistics.scss';
+@import '_advices.scss';
+@import '_about.scss';
+@import '_clients.scss';
+@import '_subscribe.scss';
+
+
 

@@ -1,0 +1,117 @@
+.about {
+    min-height: 890px;
+    background: #fff;
+    padding: 100px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .description {
+            max-width: 510px;
+        }
+    }
+
+    &__inner-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    &__inner-video {
+        position: relative;
+        max-width: 600px;
+        height: 442px;
+        width: 100%;
+
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__inner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .title {
+            max-width: 333px;
+            text-align: left;
+        }
+
+        .description {
+            max-width: 333px;
+            text-align: left;
+        }
+    }
+
+    &__content-items {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__content-item {
+        max-width: 333px;
+        width: 100%;
+        height: 77px;
+        display: flex;
+        margin: 30px 0;
+    }
+}
+
+
+.content {
+
+    &__item-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+
+    &__item-title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #252B42;
+    }
+
+    &__item-description {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        &__inner-body {
+            flex-direction: column-reverse;
+        }
+
+        &__inner-video {
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        &__inner-video  {
+            height: 280px;
+        }
+    }
+}
